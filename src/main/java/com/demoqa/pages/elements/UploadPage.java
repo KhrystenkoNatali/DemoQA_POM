@@ -28,8 +28,9 @@ public class UploadPage extends BasePage {
     WebElement uploadFile;
 
     public UploadPage performKeyEventWithRobot() {
+        pause(500);
         clickWithRectangle(uploadFile);
-
+        pause(500);
         //press SHIFT key
         robot.keyPress(KeyEvent.VK_SHIFT);
         pause(1000);
@@ -61,22 +62,22 @@ public class UploadPage extends BasePage {
         clickWithRectangle(uploadFile);
 
         // find coordinates of file
-        pause(1000);
-//        PointerInfo pointerInfo = MouseInfo.getPointerInfo();
-//        Point location = pointerInfo.getLocation();
-//        int x = (int) location.getX();
-//        int y = (int) location.getY();
-//        System.out.println(y + " *** " + x);
-        //409 *** 374
+        pause(10000);
+       //PointerInfo pointerInfo = MouseInfo.getPointerInfo();
+        //Point location = pointerInfo.getLocation();
+       // int x = (int) location.getX();
+       // int y = (int) location.getY();
+        //System.out.println(y + " *** " + x);
+        //249 *** 508
         //move mouse point with coordinates
-        robot.mouseMove(374,409);
+        robot.mouseMove(508,249);
         pause(1000);
-        //click left mouse button
+       // click left mouse button
         robot.mousePress(InputEvent.BUTTON1_DOWN_MASK);
-        //release left mouse button
+       // release left mouse button
         robot.mouseRelease(InputEvent.BUTTON1_DOWN_MASK);
-        pause(1000);
-        //press ENTER key
+       pause(1000);
+      //  press ENTER key
         robot.keyPress(KeyEvent.VK_ENTER);
         return this;
     }

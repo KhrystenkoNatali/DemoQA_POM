@@ -83,7 +83,8 @@ public class ElementsTests extends TestBase {
     public void performMouseEventWithRobotTest() {
         sidePanel.selectUpload();
         upload.preformMouseEvent()
-                .verifyFilePath("C:\\fakepath\\D1.txt");
+                .verifyFilePath("C:\\fakepath\\D1.txt")
+        ;
     }
 
     @Test
