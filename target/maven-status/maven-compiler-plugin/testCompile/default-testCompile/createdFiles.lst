@@ -1,0 +1,8 @@
+com\demoqa\tests\PracticeFormTests.class
+com\demoqa\tests\BookStoreTests.class
+com\demoqa\tests\InteractionsTests.class
+com\demoqa\core\TestBase.class
+com\demoqa\tests\WidgetsTests.class
+com\demoqa\tests\ElementsTest.class
+com\demoqa\tests\AlertsFrameWindowsTests.class
+com\demoqa\tests\ElementsTests.class
